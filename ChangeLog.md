@@ -1,5 +1,7 @@
 # Changelog
 
+## 1.1.6
+ - Update `GetViewModelProperties` with inherited properties
 ## 1.1.5
  - Update Samples
  - Add way to search for ViewModels in UserAssemblies 

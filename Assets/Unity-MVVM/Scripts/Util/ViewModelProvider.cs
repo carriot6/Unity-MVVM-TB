@@ -133,12 +133,12 @@ namespace UnityMVVM.Util
                 .Select(e => e.Name).ToList();
         }
 
-        public static PropertyInfo[] GetViewModelProperties(string typeString, BindingFlags bindingFlags = BindingFlags.DeclaredOnly | BindingFlags.Instance | BindingFlags.Public)
+        public static PropertyInfo[] GetViewModelProperties(string typeString, BindingFlags bindingFlags = BindingFlags.FlattenHierarchy | BindingFlags.DeclaredOnly | BindingFlags.Instance | BindingFlags.Public)
         {
             return GetViewModelType(typeString).GetProperties(bindingFlags);
         }
 
-        internal static MethodInfo[] GetViewModelMethods(string typeString, BindingFlags bindingFlags = BindingFlags.DeclaredOnly | BindingFlags.Instance | BindingFlags.Public)
+        internal static MethodInfo[] GetViewModelMethods(string typeString, BindingFlags bindingFlags = BindingFlags.FlattenHierarchy | BindingFlags.DeclaredOnly | BindingFlags.Instance | BindingFlags.Public)
         {
             return GetViewModelType(typeString).GetMethods(bindingFlags);
         }

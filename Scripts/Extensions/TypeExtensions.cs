@@ -15,7 +15,7 @@ namespace UnityMVVM.Extensions
         public static PropertyInfo[] GetBindableProperties(this Type t, bool needsGetter = true, bool needsSetter = true)
         {
             var query =
-                 t.GetProperties( BindingFlags.Instance | BindingFlags.Public).Where(prop =>
+                 t.GetProperties(BindingFlags.Instance | BindingFlags.Public).Where(prop =>
                   !prop.GetCustomAttributes(typeof(ObsoleteAttribute), true).Any());
 
             if (needsSetter)

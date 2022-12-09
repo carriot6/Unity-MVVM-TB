@@ -154,6 +154,7 @@ namespace UnityMVVM.Samples.BasicUsage
 
         [SerializeField]
         private DateTime _now;
+
         public Color DemoBackgroundColor
         {
             get { return _demoBackgroundColor; }

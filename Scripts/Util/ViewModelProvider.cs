@@ -24,9 +24,9 @@ namespace UnityMVVM.Util
                     try
                     {
                         _userAssembly.Add(Assembly.Load("Assembly-CSharp"));
-                        
+
                         var userAssembliesObject = Resources.Load<UserAssemblyConfig>("UserAssemblyConfig");
-                        
+
                         if (userAssembliesObject != null)
                             _userAssembly.AddRange(userAssembliesObject.UserAssemblyNames.Select(e => Assembly.Load(e)));
                     }

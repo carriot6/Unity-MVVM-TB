@@ -1,23 +1,18 @@
 {
     "name": "com.push-pop.unitymvvm",
     "displayName": "Unity-MVVM",
-    "version": "1.1.6",
-    "unity": "2019.1",
+    "version": "1.1.5",
+    "unity": "2019.4",
     "description": "Lightweight MVVM Framework for Unity3D",
     "author": "Nate Turley",
     "repository": {
         "type": "git",
-        "url": "https://github.com/carriot6/Unity-MVVM-TB.git#upm"
+        "url": "https://github.com/push-pop/Unity-MVVM.git#upm"
     },
     "samples": [{
-            "displayName": "MVVM Tests",
+            "displayName": "Basic Usage",
             "description": "Basic Demo of many different binding types",
-            "path": "Samples~/MVVMTest"
-        },
-        {
-            "displayName": "Property Paths",
-            "description": "Shows usage for property paths",
-            "path": "Samples~/PropertyPaths"
+            "path": "Samples~/Basic Usage"
         },
         {
             "displayName": "Selactable CollectionView",

@@ -34,7 +34,7 @@ namespace UnityMVVM.Extensions
 
         public static FieldInfo[] GetBindableFields(this Type t)
         {
-            return t.GetFields(BindingFlags.FlattenHierarchy | BindingFlags.DeclaredOnly | BindingFlags.Instance | BindingFlags.Public).Where(field =>
+            return t.GetFields(BindingFlags.FlattenHierarchy | BindingFlags.Instance | BindingFlags.Public).Where(field =>
                   !field.GetCustomAttributes(typeof(ObsoleteAttribute), true)
                   .Any()).ToArray();
         }

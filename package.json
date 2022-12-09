@@ -1,13 +1,13 @@
 {
     "name": "com.push-pop.unitymvvm",
     "displayName": "Unity-MVVM",
-    "version": "1.1.5",
+    "version": "1.1.6",
     "unity": "2019.4",
     "description": "Lightweight MVVM Framework for Unity3D",
     "author": "Nate Turley",
     "repository": {
         "type": "git",
-        "url": "https://github.com/push-pop/Unity-MVVM.git#upm"
+        "url": "https://github.com/carriot6/Unity-MVVM-TB.git#upm"
     },
     "samples": [{
             "displayName": "Basic Usage",
